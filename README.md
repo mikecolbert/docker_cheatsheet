@@ -33,3 +33,13 @@ docker ps -a
   -l = latest
   -s = by size
 ```
+
+Stop a docker container
+```
+docker stop *container ID or name*
+```
+
+Remove a docker container
+```
+docker rm *container ID or name*
+```
