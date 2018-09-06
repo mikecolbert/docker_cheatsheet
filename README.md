@@ -34,6 +34,11 @@ docker ps -a
   -s = by size
 ```
 
+View docker logs -- especially useful if a container will not start and has a status of Exit(1)
+``` 
+docker logs *container ID or name*
+```
+
 Stop a docker container
 ```
 docker stop *container ID or name*
@@ -42,4 +47,19 @@ docker stop *container ID or name*
 Remove a docker container
 ```
 docker rm *container ID or name*
+```
+
+List docker images
+```
+docker images -a
+  -a = all
+```
+
+Remove docker images
+```
+# removes a single image
+docker rmi *image id or name*
+
+# removes all images
+docker rmi $(docker images -a -q)  
 ```
